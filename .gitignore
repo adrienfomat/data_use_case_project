@@ -1,0 +1,31 @@
+# Secrets — never commit (brief: "Ne mettez jamais de mot de passe dans le dépôt")
+.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Spark / Delta / checkpoints (local runs)
+spark-warehouse/
+metastore_db/
+derby.log
+checkpoints/
+*.crc
+
+# Generated data & backups
+data/generated/
+backups/
+*.dump
+
+# Tooling
+.idea/
+.vscode/
+.DS_Store
+.remember/
